@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tìm Khách Sỉ.com – Tool Quét Data Khách Hàng Tự Động</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .plan-card {
+      transition: all 0.3s ease;
+    }
+    .plan-card.active {
+      background-color: #15803d; /* 🌿 Xanh lá đậm (Tailwind: green-700) */
+      color: #fff; /* Chữ trắng */
+      border: 2px solid #15803d;
+      box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.3);
+    }
+
+    .plan-card.active h3,
+    .plan-card.active p,
+    .plan-card.active li {
+      color: #fff !important;
+    }
+  </style>
+<!-- | Tên                        | Mã        |
+| -------------------------- | --------- |
+| Xanh lá dịu (green-600)    | `#16a34a` |
+| Xanh lá sáng (green-500)   | `#22c55e` |
+| Xanh rêu đậm (emerald-700) | `#047857` | -->
+
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- HERO SECTION -->
+<section class="bg-gradient-to-r from-green-700 to-red-700 text-white py-20 px-6 text-center">
+  <h1 class="text-4xl font-bold mb-4">Tìm Khách Sỉ.com – Săn Data Khách Hàng Trong 1 Click</h1>
+  <p class="text-lg mb-6">Tiết kiệm hàng triệu đồng ngân sách – Tiếp cận khách hàng siêu chuẩn – Bán hàng như cá gặp nước</p>
+  <!-- <a href="#form" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 inline-block">Trải nghiệm miễn phí ngay</a> -->
+  <a href="#form" class="mt-6 inline-block bg-green-700 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-green-800 transition">
+    Trải nghiệm miễn phí ngay
+  </a>
+  
+</section>
+
+<!-- LÝ DO SỬ DỤNG TOOL -->
+<section class="py-16 px-6 bg-gray-50">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold text-center mb-8">Tại sao những người kinh doanh thành công lại chọn Tìm Khách Sỉ.com ?</h2>
+    <p class="mb-6 font-bold text-center">"Big Data =>> Big Money" – Ai sở hữu datalist, người đó sở hữu thị trường!</p>
+    <p class="mb-6 font-bold text-center">Bạn muốn bán hàng hiệu quả? Hãy để Tìm Khách Sỉ.com làm thay bạn!</p>
+    <ul class="grid md:grid-cols-2 gap-6 list-disc pl-5 text-sm font-bold">
+      <li>Quét data cực nhanh – chuẩn từng địa chỉ, số điện thoại</li>
+      <li>Tìm trúng tệp khách hàng đang cần mua sản phẩm của bạn</li>
+      <li>Tạo danh sách khách hàng tiềm năng chỉ trong vài phút</li>
+      <li>Tiết kiệm hàng chục triệu mỗi tháng chi phí marketing</li>
+      <li>Không cần kỹ năng, không cần thuê thêm nhân sự</li>
+      <li>Phân tích thị trường, đánh giá đối thủ siêu dễ</li>
+    </ul>
+    <p class="mt-6 italic text-center">Hãy tưởng tượng bạn có cộng đồng 1 triệu khách hàng – chỉ cần mỗi người mua 1 đô, bạn đã là triệu phú!</p>
+  </div>
+</section>
+
+
+<!-- LỢI ÍCH CHIẾN LƯỢC CỦA PHẦN MỀM -->
+<section class="bg-white py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold text-center mb-10">Phần mềm TÌM KHÁCH SỈ (quét SĐT theo bản đồ) có thể giúp gì cho doanh nghiệp?</h2>
+    <div class="grid md:grid-cols-3 gap-6 text-sm">
+      <div class="bg-gray-100 p-6 rounded-lg shadow">
+        <h3 class="font-semibold mb-2">⏱️ Tiết kiệm thời gian và công sức</h3>
+        <p>Không cần tìm kiếm thủ công. Quét hàng trăm kết quả trong vài giây, giúp bạn và đội ngũ tập trung vào tư vấn và chốt đơn.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow">
+        <h3 class="font-semibold mb-2">🎯 Tiếp cận đúng khách hàng tiềm năng</h3>
+        <p>Xác định chính xác ai đang cần sản phẩm/dịch vụ của bạn, từ đó gửi tin nhắn hoặc gọi điện đúng người – đúng lúc.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow">
+        <h3 class="font-semibold mb-2">💰 Tăng tỷ lệ chuyển đổi đơn hàng</h3>
+        <p>Chủ động tiếp cận khách có nhu cầu giúp tăng tỷ lệ chốt đơn, xây dựng tệp khách trung thành và mở rộng doanh thu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ĐOẠN VIDEO DEMO -->
+<section class="bg-gray-100 py-16 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6">
+      Cách Tìm Sỉ AI hoạt động chỉ trong 60s
+    </h2>
+
+    <!-- KHUNG VIDEO TO NHƯ mp4 -->
+    <div class="rounded-lg overflow-hidden mb-4">
+      <div class="w-full h-0 relative" style="padding-bottom: 56.25%;"> <!-- 16:9 ratio -->
+        <iframe
+          class="absolute top-0 left-0 w-full h-full rounded-lg shadow"
+          src="https://www.youtube.com/embed/ZznAa29N6gI"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <p class="text-gray-700">
+      Chọn khu vực → Bấm nút → Tạo danh sách khách hàng mục tiêu trong vài giây!
+    </p>
+  </div>
+</section>
+
+
+<!-- VIDEO GIỚI THIỆU -->
+<!-- <section class="bg-gray-100 py-16 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6">Cách Tìm Sỉ AI hoạt động chỉ trong 60s</h2>
+    <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-4">
+      <video class="w-full h-full" controls>
+        <source src="img/vi1.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ thẻ video.
+      </video>
+    </div>
+    <p class="text-gray-700">Chọn khu vực → Bấm nút → Tạo danh sách khách hàng mục tiêu trong vài giây!</p>
+  </div>
+</section> -->
+
+
+<!-- MỤC BANNER ẢNH DEMO KẾT QUẢ -->
+<section class="py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-8">Kết quả tìm kiếm từ Tìm Khách Sỉ.com</h2>
+    <!-- <div class="grid md:grid-cols-2 gap-8"> -->
+    <div class="grid md:grid-cols-1 gap-8">
+      <img src="img/re1.png" alt="demo data 1" class="rounded shadow">
+      <!-- <img src="img/re2.png" alt="demo data 2" class="rounded shadow"> -->
+    </div>
+    <p class="text-sm text-gray-500 mt-4 italic">Quét cắt lớp chuyên sâu theo khu vực, theo tọa độ, thông tin thực tế chính xác</p>
+  </div>
+</section>
+<!-- TÍNH NĂNG NỔI BẬT -->
+<section class="py-16 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl font-bold text-center mb-10">3 Tính năng khiến bạn phải WOW!</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm">
+      <div class="bg-white shadow rounded p-4">🎯 Quét tên, địa chỉ, SĐT, website của hàng trăm, hàng ngàng địa điểm , thao tác đơn giản.</div>
+      <div class="bg-white shadow rounded p-4">🧠 Lọc theo ngành, địa phương, khu vực lân cận – độ chính xác 100%</div>
+      <!-- <div class="bg-white shadow rounded p-4">📊 Phân tích xu hướng đánh giá, tìm insight thị trường</div> -->
+      <div class="bg-white shadow rounded p-4">📥 Xuất file CSV/Excel – sẵn sàng dùng cho quảng cáo và CRM</div>
+    </div>
+  </div>
+</section>
+<!-- PHẢN HỒI KHÁCH HÀNG -->
+<section class="bg-white py-20 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-10">Phản hồi từ khách hàng thật</h2>
+    <div class="space-y-6">
+
+      <!-- Khách hàng 1 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow flex flex-col sm:flex-row items-center sm:items-start text-left">
+        <img src="img/a1.png" alt="Anh Toàn" class="w-20 h-20 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6">
+        <div>
+          <p class="italic">"Chỉ trong vài tiếng, mình quét được danh sách hơn 1.000 nhà thuốc quanh khu vực TP.HCM – data đầy đủ, chất lượng. Từ đó gọi chốt đơn rất nhanh!"</p>
+          <p class="font-semibold text-blue-600 mt-2">– Anh Toàn, kinh doanh thiết bị y tế.</p>
+        </div>
+      </div>
+
+      <!-- Khách hàng 2 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow flex flex-col sm:flex-row items-center sm:items-start text-left">
+        <img src="img/a2.png" alt="Chị Hương" class="w-20 h-20 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6">
+        <div>
+          <p class="italic">"Trước đây phải thuê 2 bạn nhân viên lọc danh sách, giờ chỉ cần bỏ ra 15 phút là xong. Chi phí marketing giảm 70% mà vẫn ra đơn đều."</p>
+          <p class="font-semibold text-blue-600 mt-2">– Chị Hương, chủ shop mỹ phẩm.</p>
+        </div>
+      </div>
+
+      <!-- Khách hàng 3 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow flex flex-col sm:flex-row items-center sm:items-start text-left">
+        <img src="img/a3.png" alt="Anh Trung" class="w-20 h-20 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6">
+        <div>
+          <p class="italic">"Công cụ này thật sự giúp mình tiết kiệm thời gian, lập được danh sách khách hàng khá chính xác."</p>
+          <p class="font-semibold text-blue-600 mt-2">– Anh Trung, startup ngành dịch vụ vệ sinh.</p>
+        </div>
+      </div>
+
+      <!-- Khách hàng 4 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow flex flex-col sm:flex-row items-center sm:items-start text-left">
+        <img src="img/a4.png" alt="Anh Hoàng" class="w-20 h-20 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6">
+        <div>
+          <p class="italic">"Cài đặt cũng nhanh, đơn giản. Rất tiện lợi cho người không rành kỹ thuật như mình!"</p>
+          <p class="font-semibold text-blue-600 mt-2">– Anh Hoàng, kinh doanh online.</p>
+        </div>
+      </div>
+
+      <!-- Khách hàng 5 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow flex flex-col sm:flex-row items-center sm:items-start text-left">
+        <img src="img/a5.png" alt="Anh Dũng" class="w-20 h-20 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6">
+        <div>
+          <p class="italic">"Tính năng tìm kiếm theo bán kính rất hay – giúp mình dễ dàng lọc ra các khách hàng lân cận quanh cửa hàng để tiếp cận hiệu quả hơn."</p>
+          <p class="font-semibold text-blue-600 mt-2">– Anh Dũng, chủ cửa hàng điện máy.</p>
+        </div>
+      </div>
+      <!-- Khách hàng 6 -->
+      <div class="bg-gray-50 p-6 rounded-lg shadow flex flex-col sm:flex-row items-center sm:items-start text-left">
+        <img src="img/a6.png" alt="Anh Dũng" class="w-20 h-20 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6">
+        <div>
+          <p class="italic">"Mình đi du lịch, tìm quán ăn và quán cafe, kết quả ấn tượng hơn mình nghĩ, có list dài sọc luôn, khỏi mất công."</p>
+          <p class="font-semibold text-blue-600 mt-2">– Anh Hoài, nhân viên văn phòng.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- NÚT CHAT ZALO CỐ ĐỊNH -->
+<div class="fixed bottom-6 right-6 z-50">
+  <a href="https://zalo.me/0356296620" target="_blank">
+    <img src="img/zalo.png" alt="Chat Zalo" class="w-14 h-14 rounded-full shadow-lg border-2 border-white">
+
+  </a>
+</div>
+<!-- BẢNG GIÁ -->
+<section class="bg-gray-100 py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-8">Gói Dịch Vụ – Linh Hoạt Theo Mọi Nhu Cầu</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="plan-card bg-white rounded shadow p-6 cursor-pointer" onclick="setPlan('Gói Trải Nghiệm')">
+        <h3 class="text-xl font-semibold mb-2">Gói Trải Nghiệm</h3>
+        <p class="mb-4 text-gray-600 font-medium">chỉ với 199.000đ cho tháng đầu tiên</p>
+        <ul class="text-left text-sm mb-4">
+          <li>- Đăng ký số điện thoại theo CCCD</li>
+          <li>- Chỉ áp dụng cho tháng đầu tiên</li>
+        </ul>
+        <a href="#form" class="block bg-green-700 hover:bg-green-800 text-white py-2 rounded transition" onclick="setPlan('Gói Trải Nghiệm')">Đăng ký ngay</a>
+
+      </div>
+      <div class="plan-card bg-white rounded shadow p-6 cursor-pointer active" onclick="setPlan('Gói Chuyên Nghiệp')">
+        <h3 class="text-xl font-semibold mb-2">Gói Chuyên Nghiệp</h3>
+        <p class="mb-4 text-gray-600 font-medium">299.000đ/ tháng – 2.999.000đ/ năm</p>
+        <ul class="text-left text-sm mb-4">
+          <li>- Không giới hạn số lượng quét</li>
+          <li>- Không giới hạn tính năng - số Lượng kết quả nhiều hơn</li>
+        </ul>
+        <a href="#form" class="block bg-green-700 hover:bg-green-800 text-white py-2 rounded transition" onclick="setPlan('Gói Chuyên Nghiệp')">Dùng thử 1 ngày</a>
+
+      </div>
+      <div class="plan-card bg-white rounded shadow p-6 cursor-pointer" onclick="setPlan('Gói Doanh Nghiệp')">
+        <h3 class="text-xl font-semibold mb-2">Gói Doanh Nghiệp</h3>
+        <p class="mb-4 text-gray-600 font-medium">Tuỳ chỉnh theo API riêng & quy mô</p>
+        <ul class="text-left text-sm mb-4">
+          <li>- Kết nối API riêng biệt</li>
+          <li>- Tích hợp CRM, Zalo Ads, hệ thống nội bộ</li>
+        </ul>
+        <a href="#form" class="block bg-green-700 hover:bg-green-800 text-white py-2 rounded transition" onclick="setPlan('Gói Doanh Nghiệp')">Liên hệ tư vấn</a>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FORM ĐĂNG KÝ -->
+<!-- action="https://script.google.com/macros/s/AKfycbxDJLmpep7avVwb29u-H-34kZKM1a9_rMQWLQAH2E-jbA-l6WdIJC1N2mYvQ34Eh1A/exec"
+action="https://script.google.com/macros/s/AKfycbzksU4BHrcoxu9Fe1RrijuMesHq2Hnxl0ZQt5UyrXw-QHLxpfNDAhwvRjjSevdm1WPd7g/exec"
+action="https://script.google.com/macros/s/AKfycbxTvdZUWW7Zcs6aap29JMM2_LJnWECeIsUOQ1kk_INaFMJc7TTyaM1JvSYCPE2io74fdg/exec" -->
+<section id="form" class="py-16 px-6">
+  <div class="max-w-xl mx-auto">
+    <h2 class="text-center text-2xl font-bold mb-6">Đăng ký nhận ngay 3 ngày sử dụng miễn phí</h2>
+    <h2 class="text-center text-2xl font-bold mb-6">Săn Data Ngay !</h2>
+    <form 
+      class="space-y-4"
+      action="https://script.google.com/macros/s/AKfycbxTvdZUWW7Zcs6aap29JMM2_LJnWECeIsUOQ1kk_INaFMJc7TTyaM1JvSYCPE2io74fdg/exec"
+      method="GET" target="hidden_iframe" onsubmit="submittedForm()">
+      <input name="name" type="text" placeholder="Họ tên" class="w-full p-3 border rounded" required />
+      <input name="phone" type="tel" placeholder="Số điện thoại" class="w-full p-3 border rounded" required />
+      <input name="business" type="text" placeholder="Lĩnh vực kinh doanh" class="w-full p-3 border rounded" />
+      <input name="plan" type="text"  class="w-full p-3 border rounded" id="plan" value="" readonly>
+      <button id="submitBtn" type="submit" class="w-full bg-green-700 text-white py-3 rounded font-semibold hover:bg-green-800 transition">Đăng ký ngay</button>
+
+    </form>
+    <iframe name="hidden_iframe" style="display:none;" onload="formDone()"></iframe>
+  </div>
+</section>
+<!-- FOOTER -->
+<!-- <footer class="bg-gray-900 text-white py-6 text-center text-sm">
+  © 2025 Tìm Khách Sỉ.com | Hỗ trợ: support@timkhachsi.com – Đồng hành cùng doanh nghiệp Việt</footer> -->
+<!-- HERO BANNER CUỐI TRANG -->
+<section class="bg-gradient-to-r from-green-700 to-yellow-700 text-white py-20 px-6 text-center">
+  <!-- <h2 class="text-2xl sm:text-3xl font-bold mb-4">TimKhachSi.com – Hunt for customer data in 1 click</h2> -->
+  <p class="text-sm sm:text-base mb-6">© 2025 Tìm Khách Sỉ.com | Hỗ trợ: support@timkhachsi.com – Đồng hành cùng doanh nghiệp Việt</p>
+  <!-- <a href="#form" class="mt-4 inline-block bg-white text-green-700 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">
+    Try it for free now
+  </a> -->
+</section>
+
+
+<!-- JS -->
+<script>
+  window.onload = () => {
+    setPlan('Gói Chuyên Nghiệp'); // Gán mặc định khi trang load
+  };
+
+  let submitting = false;
+  function submittedForm() {
+    submitting = true;
+
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.innerText = "Đang gửi...";
+    btn.classList.add("opacity-60", "cursor-not-allowed");
+  }
+
+  function formDone() {
+    if (submitting) {
+      submitting = false;
+      window.location.href = "s2.html";  // Điều hướng sau khi gửi
+    }
+  }
+</script>
+
+<!-- đoạn JavaScript để cập nhật giá trị gói -->
+<script>
+  function setPlan(planName) {
+    document.getElementById('plan').value = planName;
+
+    // Xóa class active của tất cả các gói
+    const cards = document.querySelectorAll('.plan-card');
+    cards.forEach(card => card.classList.remove('active'));
+
+    // Thêm class active cho gói được click
+    const buttons = document.querySelectorAll('[onclick^="setPlan"]');
+    buttons.forEach(btn => {
+      if (btn.getAttribute('onclick').includes(planName)) {
+        btn.closest('.plan-card').classList.add('active');
+      }
+    });
+  }
+</script>
+
+
+</body>
+</html>
